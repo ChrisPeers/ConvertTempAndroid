@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ConvertTemp</string>
+    <string name="convertTitle">Convert:</string>
+    <string name="FTC">Fahrenheit to Centigrade</string>
+    <string name="CTF">Centigrade to Fahrenheit</string>
+    <string name="convertButton">CONVERT</string>
+    <string name="textDefault">0</string>
+    <string name="textRound">Round</string>
+    <string name="Centigrade">Centigrade</string>
+    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="Kelvin">Kelvin</string>
+    <string name="From">From</string>
+    <string name="To">To</string>
+</resources>

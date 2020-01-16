@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textConv"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/convertTitle"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/textDefault"
+        app:layout_constraintBottom_toTopOf="@+id/textFrom"
+        app:layout_constraintStart_toStartOf="@+id/textConv"
+        app:layout_constraintTop_toBottomOf="@+id/textConv" />
+
+    <CheckBox
+        android:id="@+id/checkRound"
+        android:layout_width="87dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/textRound"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupTo" />
+
+    <RadioGroup
+        android:id="@+id/groupFrom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFrom">
+
+        <RadioButton
+            android:id="@+id/fromC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Centigrade" />
+
+        <RadioButton
+            android:id="@+id/fromF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Fahrenheit" />
+
+        <RadioButton
+            android:id="@+id/fromK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Kelvin" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="@string/From"
+        app:layout_constraintBottom_toTopOf="@+id/groupFrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <RadioGroup
+        android:id="@+id/groupTo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkRound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTo">
+
+        <RadioButton
+            android:id="@+id/toC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Centigrade" />
+
+        <RadioButton
+            android:id="@+id/toF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Fahrenheit" />
+
+        <RadioButton
+            android:id="@+id/toK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Kelvin" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/To"
+        app:layout_constraintBottom_toTopOf="@+id/groupTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupFrom" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="138dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="34dp"
+        android:onClick="convert_onClick"
+        android:text="@string/convertTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkRound" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
